@@ -27,3 +27,5 @@ def copy_files():
         print('Created marketmaker project.\n**** \nImportant!!!\nEdit settings.py before starting the bot.\n****')
     except FileExistsError:
         print('Market Maker project already exists!')
+
+from market_maker import my_market_maker
