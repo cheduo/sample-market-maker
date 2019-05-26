@@ -483,5 +483,7 @@ def run():
     # Try/except just keeps ctrl-c from printing an ugly stacktrace
     try:
         om.run_loop()
-    except(KeyboardInterrupt, SystemExit):
+    except(KeyboardInterrupt):
         sys.exit()
+    except(SystemExit):
+        run()
